@@ -36,6 +36,11 @@ export PATH=$PATH:/usr/local/bin
 # Yarn Path
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# NVM Configuration
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="false"
 
@@ -47,6 +52,7 @@ plugins=(
   git
   docker
 )
+
 # User configuration
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
