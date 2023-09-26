@@ -80,8 +80,12 @@ source $ZSH/oh-my-zsh.sh
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Aliases
-alias zshrc="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
+``
+alias zshrc="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Docker Aliases
 alias cclean='docker rm -f $(docker ps -aq)'
