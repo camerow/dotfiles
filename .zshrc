@@ -99,3 +99,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 free-port() { kill "$(lsof -t -i :$1)"; }
 kill-port() { kill -kill "$(lsof -t -i :$1)"; }
+
+# Import my scripts 
+for f in $HOME/.local/bin/scripts/*; do . $f; done
