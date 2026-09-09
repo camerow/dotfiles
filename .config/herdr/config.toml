@@ -1,0 +1,24 @@
+onboarding = false
+
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[ui.toast]
+delivery = "herdr"
+
+[worktrees]
+directory = "~/src/worktrees"
+
+# Mirrors ~/.tmux.conf: ctrl+space prefix, | and - splits, hjkl panes,
+# alt+arrows for panes and shift+arrows for tabs without the prefix.
+[keys]
+prefix = "ctrl+space"
+split_vertical = ["prefix+v", "prefix+shift+backslash"]
+split_horizontal = ["prefix+minus"]
+focus_pane_left = ["prefix+h", "alt+left"]
+focus_pane_down = ["prefix+j", "alt+down"]
+focus_pane_up = ["prefix+k", "alt+up"]
+focus_pane_right = ["prefix+l", "alt+right"]
+previous_tab = ["prefix+p", "shift+left"]
+next_tab = ["prefix+n", "shift+right"]

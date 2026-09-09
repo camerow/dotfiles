@@ -31,10 +31,10 @@
 
     # View abbreviated SHA, description, and history graph of the latest 20 commits.
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	
+	# View the current working tree status
+	st = status
 
-    # View the current working tree status
-    st = status
-    
 	# View the current working tree status using the short format.
 	s = status -s
 
@@ -46,3 +46,16 @@
 
 [pull]
     rebase = true
+[user]
+	email = camerow@users.noreply.github.com
+	name = Will Cameron
+	signingkey = /Users/will/.ssh/id_rsa.pub
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
